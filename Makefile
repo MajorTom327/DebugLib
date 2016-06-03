@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: vthomas <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/23 14:39:19 by vthomas           #+#    #+#              #
-#    Updated: 2016/02/02 18:44:23 by vthomas          ###   ########.fr        #
+#    Updated: 2016/06/03 04:45:13 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ SRC_NAME = dbg_breakpoint.c\
 		   dbg_var_str.c\
 		   dbg_var_int.c\
 		   ft_putnbr.c\
+		   ft_spacelevel.c\
 		   ft_strlen.c
 OBJ_PATH = ./obj/
 INC_PATH = ./include
