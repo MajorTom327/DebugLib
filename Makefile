@@ -6,7 +6,7 @@
 #    By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/23 14:39:19 by vthomas           #+#    #+#              #
-#    Updated: 2016/06/03 04:45:13 by vthomas          ###   ########.fr        #
+#    Updated: 2016/07/16 04:12:11 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,9 @@ SRC_NAME = dbg_breakpoint.c\
 		   dbg_var_char.c\
 		   dbg_var_str.c\
 		   dbg_var_int.c\
+		   dbg_var_array_char.c\
+		   dbg_var_array_int.c\
+		   dbg_var_array_str.c\
 		   ft_putnbr.c\
 		   ft_spacelevel.c\
 		   ft_strlen.c
