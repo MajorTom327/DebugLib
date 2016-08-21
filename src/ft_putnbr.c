@@ -27,28 +27,28 @@ static void	ft_print_nb(int n, int pow)
 	char str[2];
 	if (n == 0)
 	{
-		write(1, "0", 1);
+		write(2, "0", 1);
 		return ;
 	}
 	if (n < 0)
 	{
-		write(1, "-", 1);
+		write(2, "-", 1);
 		n *= -1;
 	}
 	while (pow >= 0)
 	{
 		str[0] = n / ft_pow(10, pow) + '0';
-		write(1, str, 1);//Problems
+		write(2, str, 1);//Problems
 		n = n % ft_pow(10, pow);
 		pow--;
 	}
 }
 
-void		ft_putnbr(int n)
+void		dbg_putnbr(int n)
 {
 	if (n == -2147483648)
 	{
-		write(1,"-2147483648", 11);
+		write(2,"-2147483648", 11);
 		return ;
 	}
 	ft_print_nb(n, ft_tpow(n) - 1);
