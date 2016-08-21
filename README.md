@@ -1,5 +1,4 @@
-| :--- | ---: |
-| #DebugLib | [![Build Status](https://travis-ci.org/MajorTom327/DebugLib.svg?branch=master)](https://travis-ci.org/MajorTom327/DebugLib) |
+#DebugLib                           [![Build Status](https://travis-ci.org/MajorTom327/DebugLib.svg?branch=master)](https://travis-ci.org/MajorTom327/DebugLib)
 
 *DebugLib* is an project for have a simple debug librairie for debugging somes C project.
 
