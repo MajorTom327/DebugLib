@@ -1,5 +1,16 @@
-#include "debug.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: vthomas <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/11/25 19:54:54 by vthomas           #+#    #+#             */
+/*   Updated: 2016/01/11 23:06:33 by vthomas          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
+#include <debug.h>
 static int	ft_tpow(int nb)
 {
 	int result;
@@ -37,7 +48,7 @@ static void	ft_print_nb(int n, int pow)
 	}
 	while (pow >= 0)
 	{
-		str[0] = n / ft_pow(10, pow) + '0';
+		str[0] = (char)(n / ft_pow(10, pow)) + '0';
 		write(2, str, 1);//Problems
 		n = n % ft_pow(10, pow);
 		pow--;

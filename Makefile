@@ -6,12 +6,12 @@
 #    By: vthomas <vthomas@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/23 14:39:19 by vthomas           #+#    #+#              #
-#    Updated: 2016/07/16 04:12:11 by vthomas          ###   ########.fr        #
+#    Updated: 2016/10/27 17:00:19 by vthomas          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = clang
-CFLAGS = -Wall -Wextra
+CFLAGS = -Wall -Wextra -Weverything -Ofast -Os
 NAME = libdbg.a
 
 SRC_PATH = ./src/
@@ -44,7 +44,7 @@ $(NAME): $(OBJ)
 
 $(OBJ_PATH)%.o: $(SRC_PATH)%.c
 	@mkdir -p $(OBJ_PATH)
-	@$(CC) $(CFLAGS) -c $(INC) -o $@ $<
+	$(CC) $(CFLAGS) -c $(INC) -o $@ $<
 
 clean:
 	@/bin/rm -rf $(OBJ)
